@@ -13,6 +13,15 @@ function main()
     {
         modalEl.classList.remove("open");
     });
+
+    window.addEventListener("click", function(event)
+    {
+        if(event.target===modalEl)
+        {
+            modalEl.classList.remove("open");
+
+        }
+    });
 }
 
 main();
